@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header.banner {
+    background-image: url('your-banner-image-2.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.banner-title {
+    font-family: "Fredericka the Great", serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+main.content {
+    padding: 20px;
+}
+
+article.post {
+    background-color: #e0f7fa; /* Teal */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    max-width: 950px;
+    margin: 20px auto;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+article.post:hover{
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in;
+}
+article.intro {
+    background-color: #e0f7fa; /* Teal */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.post-content{
+    text-align: center;
+    }
+    
+    .imageWithWrapL {
+        width: 300px;
+        height: auto;
+        padding: 0 20px 20px 0;
+        }
+        
+        .intro-post-title {
+            font-family: "Amatic SC", sans-serif;
+            font-size: 36px;
+            color: #00796b; /* Dark Teal */
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 0;
+            font-family: "Amatic SC", sans-serif;
+}
+
+.post-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #004d40; /* Teal */
+}
+
+body {
+    background: linear-gradient(90deg, #f4dbd1,#ff8c69, #f4dbd1);
+        height: 100vh;
+        margin: 0;
+}
+
+a {
+    color: #00796b; /* Dark Teal */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #004d40; /* Teal */
+}
+
+@media (max-width: 600px) {
+    article.post{
+        flex-direction: column;
+        align-items: center;
+    }
+    article .imageWithWrapL{
+        width: 100%;
+    }
+    
+    header.banner{
+        height: 400px;
+        background-attachment:scroll;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px){
+    article .post-content {
+            font-size: 14px;
+        }
+}

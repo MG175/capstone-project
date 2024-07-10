@@ -33,7 +33,7 @@ main.content {
 }
 
 article.post {
-    background-color: #e0f7fa; /* Teal */
+    background: linear-gradient(90deg, #05c9984d, #f9f9f9f5, #0af68c3b);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ article.post:hover{
     transition: all 0.3s ease-in;
 }
 article.intro {
-    background-color: #e0f7fa; /* Teal */
+    background: linear-gradient(90deg, #9bf8ce67, #e4efeee6, #f2a89052);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -118,10 +118,24 @@ a:hover {
         background-attachment:scroll;
         text-align: center;
     }
+
 }
 
 @media (max-width: 700px){
     article .post-content {
             font-size: 14px;
         }
+}
+.small-carousel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(90deg, #05c9984d, #f9f9f9f5, #0af68c3b);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.small-carousel .carousel-inner img {
+    height: 500px;
+    object-fit: scale-down;  
 }
